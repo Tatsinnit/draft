@@ -9,10 +9,7 @@ jobs:
     # Checkcout code
     - name: Checkout
       uses: actions/checkout@v2
-    # Read cahngelog and read versions etc.
-    - name: Get current release version
-      id: package_version
-      uses: martinbeentjes/npm-get-version-action@v1.1.0
+    # Read changelog and read versions etc.
     - name: Check version is mentioned in Changelog
       id: changelog_reader
       uses: mindsers/changelog-reader-action@v2
