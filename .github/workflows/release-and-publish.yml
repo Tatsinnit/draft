@@ -48,6 +48,6 @@ jobs:
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
       with:
-        tag_name : ${{ steps.package_version.outputs.current-version}}
-        release_name: ${{ steps.package_version.outputs.current-version}}
+        tag_name : "v${{ steps.package_version.outputs.version}}"
+        release_name: ${{ steps.package_version.outputs.version}}
         body: Publish ${{ steps.changelog_reader.outputs.changes }}
