@@ -41,13 +41,13 @@ jobs:
     #   with:
     #     files: |
     #       ./bin/*
-    # # Create release tag out of Changelog entry
-    # - name: Create a Release
-    #   id: create_release
-    #   uses: actions/create-release@v1
-    #   env:
-    #       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
-    #   with:
-    #     tag_name : ${{ steps.package_version.outputs.current-version}}
-    #     release_name: ${{ steps.package_version.outputs.current-version}}
-    #     body: Publish ${{ steps.changelog_reader.outputs.changes }}
+    # Create release tag out of Changelog entry
+    - name: Create a Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+      with:
+        tag_name : ${{ steps.package_version.outputs.current-version}}
+        release_name: ${{ steps.package_version.outputs.current-version}}
+        body: Publish ${{ steps.changelog_reader.outputs.changes }}
