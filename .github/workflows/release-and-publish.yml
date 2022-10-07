@@ -15,13 +15,14 @@ jobs:
       uses: mindsers/changelog-reader-action@v2
       with:
         validation_depth: 10
-        version: ${{ steps.package_version.outputs.current-version }}
-        path: 'CHANGELOG.md'
+        path: './CHANGELOG.md'
     # Set the DRAFT_VERSION variable
     - name: Set the draft version value
       id: step_one
       run: |
-        echo "DRAFT_VERSION=${{ steps.package_version.outputs.current-version }}" >> $GITHUB_ENV
+        echo "${{ steps.changelog_reader.outputs.current-version }} ++ ${{ steps.changelog_reader.outputs.version }}"
+        echo "${{ steps.changelog_reader.outputs.changes }}"
+        echo "DRAFT_VERSION=${{ steps.changelog_reader.outputs.current-version }}" >> $GITHUB_ENV
     - name: Check the value is set for draft version
       id: step_two
       run: |
