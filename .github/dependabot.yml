@@ -20,3 +20,158 @@ updates:
     directory: "/template/workflows/manifests/.github/workflows"
     schedule:
       interval: "weekly"
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /pkg/fixtures/dockerfiles/clojure
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /pkg/fixtures/dockerfiles/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /pkg/fixtures/dockerfiles/erlang
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /pkg/fixtures/dockerfiles/go
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /pkg/fixtures/dockerfiles/gomodule
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /pkg/fixtures/dockerfiles/gradle
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /pkg/fixtures/dockerfiles/gradlew
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /pkg/fixtures/dockerfiles/java
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /pkg/fixtures/dockerfiles/javascript
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /pkg/fixtures/dockerfiles/php
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /pkg/fixtures/dockerfiles/python
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /pkg/fixtures/dockerfiles/ruby
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /pkg/fixtures/dockerfiles/rust
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /pkg/fixtures/dockerfiles/swift
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directory: /pkg/linguist/testdirs/app-python
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /template/dockerfiles/clojure
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /template/dockerfiles/csharp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /template/dockerfiles/erlang
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /template/dockerfiles/go
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /template/dockerfiles/gomodule
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /template/dockerfiles/gradle
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /template/dockerfiles/gradlew
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /template/dockerfiles/java
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /template/dockerfiles/javascript
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /template/dockerfiles/php
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /template/dockerfiles/python
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /template/dockerfiles/ruby
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /template/dockerfiles/rust
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /template/dockerfiles/swift
+    schedule:
+      interval: daily
